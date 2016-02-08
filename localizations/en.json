@@ -1,0 +1,24 @@
+{
+  "title" : "146lab.com",
+  "portfolio" : "Portfolio",
+  "about" : "About",
+  "contact" : "Contact",
+  "contactMe" : "Contact Me",
+  "name" : "Name",
+  "emailAddress" : "Email Address",
+  "phoneNumber" : "Phone Number",
+  "message" : "Message",
+  "send" : "Send",
+  "aroundTheWeb" : "Around The Web",
+
+  "home" : "Home",
+  "work-examples" : "Work examples",
+  "contacts" : "Contacts",
+  "english" : "English",
+  "russian" : "Russian",
+  "ukrainian" : "Ukrainian",
+  "back" : "Back",
+  "email" : "Email",
+  "skype" : "Skype",
+  "link" : "Link"
+}
