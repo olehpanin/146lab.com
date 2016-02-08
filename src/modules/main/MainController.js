@@ -5,13 +5,13 @@ var LAB = LAB || {};
 
     LAB.MainModule.controller("MainController", MainController);
 
-    MainController.$inject = ["$appConfig", "$scope"];
+    MainController.$inject = ["$appConfig"];
 
-    function MainController( $appConfig, $scope ){
+    function MainController( $appConfig ){
         var vm = this;
 
         var todayDate = new Date();
-        $scope.todayDate = todayDate;
+        vm.todayDate = todayDate;
 
         console.log("main controller is here");
 

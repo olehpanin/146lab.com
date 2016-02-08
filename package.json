@@ -1,24 +1,14 @@
 {
   "name": "146lab",
+  "private" : "true",
   "version": "1.0.0",
-  "description": "",
   "main": "./js/index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
     "start": "http-server -a localhost -p 1313 -c-1 -o"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/olehpanin/startbootstrap-freelancer.git"
-  },
   "author": "Oleh Smazhnov",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/olehpanin/startbootstrap-freelancer/issues"
-  },
-  "homepage": "https://github.com/olehpanin/startbootstrap-freelancer#readme",
+  "homepage": "http://www.146lab.com",
   "dependencies": {
     "http-server": "^0.8.5"
   }
