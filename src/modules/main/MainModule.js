@@ -32,7 +32,18 @@ var LAB = LAB || {};
                 suffix: '.json'
             });
 
-            var defaultLanguage = "en";
-            $translateProvider.preferredLanguage( defaultLanguage );
+            $translateProvider.preferredLanguage( getBrowserLanguage() );
+
+            function getBrowserLanguage(){
+                var language = navigator.language || navigator.userLanguage;
+
+                if( language && language.length > 0 ){
+                    language = language.substr(0, 2);
+                } else {
+                    language = "en";
+                }
+
+                return language;
+            }
         });
 })();
