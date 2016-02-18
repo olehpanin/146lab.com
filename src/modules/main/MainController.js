@@ -10,13 +10,6 @@ var LAB = LAB || {};
     function MainController( $appConfig ){
         var vm = this;
 
-        var todayDate = new Date();
-        vm.todayDate = todayDate;
-
-        console.log("main controller is here");
-
-        console.log( $appConfig );
-
-        console.log("Hey");
+        vm.todayDate = new Date();
     }
 })();

@@ -43,6 +43,7 @@ var LAB = LAB || {};
                     language = "en";
                 }
 
+                //language = "en";
                 return language;
             }
         });
