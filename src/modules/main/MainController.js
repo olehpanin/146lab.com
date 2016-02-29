@@ -10,6 +10,13 @@ var LAB = LAB || {};
     function MainController( $appConfig ){
         var vm = this;
 
+        vm.setLanguage = setLanguage;
+
         vm.todayDate = new Date();
+
+        function setLanguage( language ){
+            console.log( language );
+
+        }
     }
 })();

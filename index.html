@@ -53,16 +53,29 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a class="moving-to-anchor" href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio" translate="portfolio"></a>
+                        <a class="moving-to-anchor" href="#portfolio" translate="portfolio"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about" translate="about"></a>
+                        <a class="moving-to-anchor" href="#about" translate="about"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact" translate="contact"></a>
+                        <a class="moving-to-anchor" href="#contact" translate="contact"></a>
+                    </li>
+                    <li role="presentation" class="dropdown page-scroll">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span translate="language"></span> <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="page-scroll">
+                                <a translate="english" ng-click="vm.setLanguage('en'); $event.preventDefault();"></a>
+                            </li>
+                            <li role="presentation" class="page-scroll">
+                                <a translate="russian" ng-click="vm.setLanguage('ru'); $event.preventDefault();"></a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
