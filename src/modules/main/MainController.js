@@ -5,9 +5,9 @@ var LAB = LAB || {};
 
     LAB.MainModule.controller("MainController", MainController);
 
-    MainController.$inject = ["$appConfig"];
+    MainController.$inject = ["$appConfig", "$translate"];
 
-    function MainController( $appConfig ){
+    function MainController( $appConfig, $translate ){
         var vm = this;
 
         vm.setLanguage = setLanguage;
@@ -15,8 +15,9 @@ var LAB = LAB || {};
         vm.todayDate = new Date();
 
         function setLanguage( language ){
-            console.log( language );
-
+            $translate.use( language );
         }
+
+        vm.workExamples = $appConfig.workExamples;
     }
 })();
