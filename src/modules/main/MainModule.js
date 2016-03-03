@@ -8,15 +8,21 @@ var LAB = LAB || {};
             workExamples : [
                 {
                     title : "Title 1",
-                    image : "imageurl",
+                    image : "/img/andia.jpg",
                     description : "Description 1",
                     url : "url1"
                 },
                 {
                     title : "Title 2",
-                    image : "imageurl",
+                    image : "/img/climate.jpg",
                     description : "Description 2",
                     url : "url2"
+                },
+                {
+                    title : "Title 2",
+                    image : "/img/company.jpg",
+                    description : "Description 2",
+                    url : "url3"
                 }
             ]
 
@@ -33,6 +39,8 @@ var LAB = LAB || {};
             });
 
             $translateProvider.preferredLanguage( getBrowserLanguage() );
+
+            $translateProvider.useSanitizeValueStrategy(null);
 
             function getBrowserLanguage(){
                 var language = navigator.language || navigator.userLanguage;
