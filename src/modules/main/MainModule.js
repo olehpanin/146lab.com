@@ -7,22 +7,22 @@ var LAB = LAB || {};
         .constant("$appConfig", {
             workExamples : [
                 {
-                    title : "Title 1",
+                    title : "Andia",
                     image : "/img/andia.jpg",
                     description : "Description 1",
-                    url : "url1"
+                    url : "/examples/Andia1/index.html"
                 },
                 {
-                    title : "Title 2",
+                    title : "Climate harmony",
                     image : "/img/climate.jpg",
                     description : "Description 2",
-                    url : "url2"
+                    url : "/examples/climate/index.html"
                 },
                 {
-                    title : "Title 2",
+                    title : "Otrada company",
                     image : "/img/company.jpg",
                     description : "Description 2",
-                    url : "url3"
+                    url : "/examples/company/index.html"
                 }
             ]
 
