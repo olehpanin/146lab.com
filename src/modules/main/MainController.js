@@ -10,6 +10,7 @@ var LAB = LAB || {};
     function MainController( $appConfig, $translate ){
         var vm = this;
 
+        vm.workExamples = [];
         vm.setLanguage = setLanguage;
 
         vm.todayDate = new Date();

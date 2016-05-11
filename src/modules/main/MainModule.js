@@ -21,7 +21,7 @@ var LAB = LAB || {};
                 {
                     title : "Otrada company",
                     image : "/img/company.jpg",
-                    description : "Description 2",
+                    description : "Description 3",
                     url : "/examples/company/index.html"
                 }
             ]

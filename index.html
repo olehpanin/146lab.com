@@ -111,17 +111,6 @@
                 </div>
             </div>
             <div class="row">
-                <!--<div class="col-sm-4 portfolio-item">-->
-                    <!--<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">-->
-                        <!--<div class="caption">-->
-                            <!--<div class="caption-content">-->
-                                <!--<i class="fa fa-search-plus fa-3x"></i>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<img src="img/portfolio/cabin.png" class="img-responsive" alt="">-->
-                    <!--</a>-->
-                <!--</div>-->
-
                 <div class="col-sm-4 portfolio-item" ng-repeat="item in vm.workExamples">
                     <a href="#portfolioModal-{{ ::$index }}" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -129,7 +118,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{{ ::item.image }}" class="img-responsive" alt="">
+                        <img ng-src="{{ ::item.image }}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -269,7 +258,7 @@
                                 <hr class="star-primary">
 
 
-                                <img src="{{ ::item.image }}" class="img-responsive img-centered" alt="">
+                                <img ng-src="{{ ::item.image }}" class="img-responsive img-centered" alt="">
                                 <!--<p>-->
                                     <!--{{ ::item.description }}-->
                                 <!--</p>-->
@@ -295,7 +284,8 @@
 
     <!-- Plugin JavaScript -->
     <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
-    <script src="bower_components/AnimatedHeader/js/classie.js"></script>
+    <!--<script src="bower_components/AnimatedHeader/js/classie.js"></script>-->
+    <script src="libs/classie.js"></script>
     <script src="bower_components/AnimatedHeader/js/cbpAnimatedHeader.min.js"></script>
 
     <!-- Contact Form JavaScript -->

@@ -1,15 +1,18 @@
 {
   "name": "146lab",
-  "private" : "true",
+  "private": "true",
   "version": "1.0.0",
   "main": "./js/index.js",
   "scripts": {
-    "start": "http-server -a localhost -p 1313 -c-1 -o"
+    "start": "npm run start-local-server",
+    "start-mail-server": "node mail/mail_server.js",
+    "start-local-server": "http-server -a localhost -p 1313 -c-1 -o"
   },
   "author": "Oleh Smazhnov",
   "license": "ISC",
   "homepage": "http://www.146lab.com",
   "dependencies": {
+    "http": "0.0.0",
     "http-server": "^0.8.5"
   }
 }
