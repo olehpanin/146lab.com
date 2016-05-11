@@ -464,3 +464,17 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+@media (max-width: 767px){
+    .navbar-nav .dropdown-menu {
+        display: block;
+        position: static;
+        /* float: none; */
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
