@@ -34,17 +34,14 @@ $(function() {
                 },
                 cache: false,
                 success: function() {
-                    var alertSuccess = $('#success > .alert-success'),
-                        alertDanger = $('#success > .alert-danger');
-
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
-                    alertSuccess.html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    alertSuccess
+                    $('#success > .alert-success')
                         .append("<strong>Your message has been sent. </strong>");
-                    alertSuccess
+                    $('#success > .alert-success')
                         .append('</div>');
 
                     //clear all fields
