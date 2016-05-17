@@ -24,10 +24,15 @@ var LAB = LAB || {};
                     description : "Description 3",
                     url : "/examples/company/index.html"
                 }
-            ]
+            ],
+            availableLanguages : [
+                'en',
+                'ru'
+            ],
+            defaultLanguage : 'en'
 
         })
-        .config(function($locationProvider, $translateProvider){
+        .config(function($locationProvider, $translateProvider, $appConfig){
             $locationProvider.html5Mode({
                 enable : false
             });
@@ -48,10 +53,11 @@ var LAB = LAB || {};
                 if( language && language.length > 0 ){
                     language = language.substr(0, 2);
                 } else {
-                    language = "en";
+                    language = $appConfig.defaultLanguage;
                 }
 
-                //language = "en";
+                language = $appConfig.availableLanguages.indexOf( language ) != -1 ? language : $appConfig.defaultLanguage;
+
                 return language;
             }
         });
